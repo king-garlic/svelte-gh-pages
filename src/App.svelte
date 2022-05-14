@@ -3,7 +3,7 @@
 </script>
 
 <main>
-	<h1>소스 수정 후 배포222  Hello {name}!</h1>
+	<h1>푸시하고 gh-pages 브랜치 에 소스 카피    Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
