@@ -354,23 +354,33 @@ surge public my-project.surge.sh
 
         C:\job\front-end\svelte\svelte-gh-pages>        
 
+    23. git commit and push     
 
-    21. build 하고 배포용 소스 올리기 
+
+
+    
+
+
+    24. 배포용 소스 올리기 
         git subtree push --prefix public/ origin gh-pages
-
-
-
-
 
         C:\job\front-end\svelte\svelte-gh-pages>git subtree push --prefix public/ origin gh-pages
         git push using:  origin gh-pages
         Everything up-to-date
 
+        C:\job\front-end\svelte\svelte-gh-pages>git subtree push --prefix public/ origin gh-pages
+        git push using:  origin gh-pages
+        Enumerating objects: 9, done.
+        Counting objects: 100% (9/9), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (5/5), done.
+        Writing objects: 100% (5/5), 4.60 KiB | 2.30 MiB/s, done.
+        Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+        To https://github.com/king-garlic/svelte-gh-pages.git
+        0007378..466c265  466c265ac9fecdbb2423aaf03e9bb5b40e90c1ee -> gh-pages
 
-
+        C:\job\front-end\svelte\svelte-gh-pages>
 
     22. 배포 된 소스 확인
         https://king-garlic.github.io/svelte-gh-pages/
-
-
-    23. git commit and push     
