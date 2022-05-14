@@ -239,3 +239,39 @@ surge public my-project.surge.sh
         git branch -M main
         git remote add origin https://github.com/king-garlic/svelte-gh-pages.git
         git push -u origin main"# svelte-gh-pages" 
+
+
+
+    11. 위 명령 실행 결과
+
+
+        C:\job\front-end\svelte\svelte-gh-pages>echo "# svelte-gh-pages" >> README.md
+
+        C:\job\front-end\svelte\svelte-gh-pages>git init
+        Initialized empty Git repository in C:/job/front-end/svelte/svelte-gh-pages/.git/
+
+        C:\job\front-end\svelte\svelte-gh-pages>git add README.md
+        warning: LF will be replaced by CRLF in README.md.
+        The file will have its original line endings in your working directory
+
+        C:\job\front-end\svelte\svelte-gh-pages>git commit -m "first commit"
+        [master (root-commit) 27a42dd] first commit
+        1 file changed, 241 insertions(+)
+        create mode 100644 README.md
+
+        C:\job\front-end\svelte\svelte-gh-pages>git branch -M main
+
+        C:\job\front-end\svelte\svelte-gh-pages>git remote add origin https://github.com/king-garlic/svelte-gh-pages.git
+
+        C:\job\front-end\svelte\svelte-gh-pages>git push -u origin main
+        Enumerating objects: 3, done.
+        Counting objects: 100% (3/3), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (2/2), done.
+        Writing objects: 100% (3/3), 2.85 KiB | 2.85 MiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0), pack-reused 0     
+        To https://github.com/king-garlic/svelte-gh-pages.git
+        * [new branch]      main -> main
+        Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+        C:\job\front-end\svelte\svelte-gh-pages>        
