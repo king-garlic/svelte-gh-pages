@@ -341,34 +341,69 @@ var app = (function () {
 
     function create_fragment(ctx) {
     	let main;
-    	let h1;
-    	let t0;
+    	let h10;
     	let t1;
-    	let t2;
+    	let h11;
     	let t3;
+    	let h12;
+    	let t5;
+    	let h13;
+    	let t7;
+    	let h14;
+    	let t9;
+    	let h15;
+    	let t10;
+    	let t11;
+    	let t12;
+    	let t13;
     	let p;
-    	let t4;
+    	let t14;
     	let a;
-    	let t6;
+    	let t16;
 
     	const block = {
     		c: function create() {
     			main = element("main");
-    			h1 = element("h1");
-    			t0 = text("yarn build 안 하고 푸시하고 gh-pages 브랜치 에 소스 카피    Hello ");
-    			t1 = text(/*name*/ ctx[0]);
-    			t2 = text("!");
+    			h10 = element("h1");
+    			h10.textContent = "1. 소스 작업";
+    			t1 = space();
+    			h11 = element("h1");
+    			h11.textContent = "2. 푸시";
     			t3 = space();
+    			h12 = element("h1");
+    			h12.textContent = "3. gh-pages 브랜치 에 소스 카피 : git subtree push --prefix public/ origin gh-pages";
+    			t5 = space();
+    			h13 = element("h1");
+    			h13.textContent = "4. 소스 확인 https://github.com/king-garlic/svelte-gh-pages/tree/gh-pages/build";
+    			t7 = space();
+    			h14 = element("h1");
+    			h14.textContent = "5. 페이지 확인 https://king-garlic.github.io/svelte-gh-pages/";
+    			t9 = space();
+    			h15 = element("h1");
+    			t10 = text("Hello ");
+    			t11 = text(/*name*/ ctx[0]);
+    			t12 = text("!");
+    			t13 = space();
     			p = element("p");
-    			t4 = text("Visit the ");
+    			t14 = text("Visit the ");
     			a = element("a");
     			a.textContent = "Svelte tutorial";
-    			t6 = text(" to learn how to build Svelte apps.");
-    			attr_dev(h1, "class", "svelte-1tky8bj");
-    			add_location(h1, file, 5, 1, 46);
+    			t16 = text(" to learn how to build Svelte apps.");
+    			attr_dev(h10, "class", "svelte-1tky8bj");
+    			add_location(h10, file, 5, 1, 46);
+    			attr_dev(h11, "class", "svelte-1tky8bj");
+    			add_location(h11, file, 6, 1, 65);
+    			attr_dev(h12, "class", "svelte-1tky8bj");
+    			add_location(h12, file, 7, 1, 81);
+    			attr_dev(h13, "class", "svelte-1tky8bj");
+    			add_location(h13, file, 8, 1, 167);
+    			attr_dev(h14, "class", "svelte-1tky8bj");
+    			add_location(h14, file, 9, 1, 253);
+    			attr_dev(h15, "class", "svelte-1tky8bj");
+    			add_location(h15, file, 10, 1, 320);
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
-    			add_location(a, file, 6, 14, 128);
-    			add_location(p, file, 6, 1, 115);
+    			add_location(a, file, 11, 14, 357);
+    			add_location(p, file, 11, 1, 344);
     			attr_dev(main, "class", "svelte-1tky8bj");
     			add_location(main, file, 4, 0, 38);
     		},
@@ -377,18 +412,28 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
-    			append_dev(main, h1);
-    			append_dev(h1, t0);
-    			append_dev(h1, t1);
-    			append_dev(h1, t2);
+    			append_dev(main, h10);
+    			append_dev(main, t1);
+    			append_dev(main, h11);
     			append_dev(main, t3);
+    			append_dev(main, h12);
+    			append_dev(main, t5);
+    			append_dev(main, h13);
+    			append_dev(main, t7);
+    			append_dev(main, h14);
+    			append_dev(main, t9);
+    			append_dev(main, h15);
+    			append_dev(h15, t10);
+    			append_dev(h15, t11);
+    			append_dev(h15, t12);
+    			append_dev(main, t13);
     			append_dev(main, p);
-    			append_dev(p, t4);
+    			append_dev(p, t14);
     			append_dev(p, a);
-    			append_dev(p, t6);
+    			append_dev(p, t16);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*name*/ 1) set_data_dev(t1, /*name*/ ctx[0]);
+    			if (dirty & /*name*/ 1) set_data_dev(t11, /*name*/ ctx[0]);
     		},
     		i: noop,
     		o: noop,

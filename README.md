@@ -342,7 +342,7 @@ surge public my-project.surge.sh
     19. 링크 페이지 확인
         https://king-garlic.github.io/svelte-gh-pages/            
 
-    20. yarn build
+    20. yarn build - 이건 생략 - 소스 수정하고 저장하면 자동 빌드 하기때문....
 
         C:\job\front-end\svelte\svelte-gh-pages>yarn build
         yarn run v1.22.18
