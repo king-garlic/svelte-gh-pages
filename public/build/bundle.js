@@ -355,7 +355,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			h1 = element("h1");
-    			t0 = text("푸시하고 gh-pages 브랜치 에 소스 카피    Hello ");
+    			t0 = text("yarn build 안 하고 푸시하고 gh-pages 브랜치 에 소스 카피    Hello ");
     			t1 = text(/*name*/ ctx[0]);
     			t2 = text("!");
     			t3 = space();
@@ -367,8 +367,8 @@ var app = (function () {
     			attr_dev(h1, "class", "svelte-1tky8bj");
     			add_location(h1, file, 5, 1, 46);
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
-    			add_location(a, file, 6, 14, 112);
-    			add_location(p, file, 6, 1, 99);
+    			add_location(a, file, 6, 14, 128);
+    			add_location(p, file, 6, 1, 115);
     			attr_dev(main, "class", "svelte-1tky8bj");
     			add_location(main, file, 4, 0, 38);
     		},
