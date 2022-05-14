@@ -275,3 +275,24 @@ surge public my-project.surge.sh
         Branch 'main' set up to track remote branch 'main' from 'origin'.
 
         C:\job\front-end\svelte\svelte-gh-pages>        
+
+
+
+    12. C:\job\front-end\svelte\svelte-gh-pages\.gitignore 주석처리
+
+        # /public/build/
+
+    13. C:\job\front-end\svelte\svelte-gh-pages\public\index.html path 수정 - . 추가
+
+
+        <link rel="icon" type="image/png" href="./favicon.png" />
+        <link rel="stylesheet" href="./global.css" />
+        <link rel="stylesheet" href="./build/bundle.css" />
+
+        <script defer src="./build/bundle.js"></script>
+
+
+    14.
+    15.
+    16.
+    17.
