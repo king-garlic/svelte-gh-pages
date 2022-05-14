@@ -282,6 +282,8 @@ surge public my-project.surge.sh
 
         # /public/build/
 
+
+
     13. C:\job\front-end\svelte\svelte-gh-pages\public\index.html path 수정 - . 추가
 
 
@@ -292,7 +294,83 @@ surge public my-project.surge.sh
         <script defer src="./build/bundle.js"></script>
 
 
-    14.
-    15.
-    16.
-    17.
+    14. commit 
+
+    15. push
+    
+    16. gh-pages branch 생성
+
+        C:\job\front-end\svelte\svelte-gh-pages>git subtree push --prefix public/ origin gh-pages
+        git push using:  origin gh-pages
+        fatal: unable to access 'https://github.com/king-garlic/svelte-gh-pages.git/': Failed to connect to github.com port 443 after 24194 ms: Timed out
+
+        C:\job\front-end\svelte\svelte-gh-pages>git subtree push --prefix public/ origin gh-pages
+        git push using:  origin gh-pages
+        Enumerating objects: 12, done.
+        Counting objects: 100% (12/12), done.   
+        Delta compression using up to 8 threads 
+        Compressing objects: 100% (12/12), done.
+        Writing objects: 100% (12/12), 30.07 KiB | 4.29 MiB/s, done.
+        Total 12 (delta 1), reused 0 (delta 0), pack-reused 0       
+        remote: Resolving deltas: 100% (1/1), done.
+        remote: 
+        remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+        remote:      https://github.com/king-garlic/svelte-gh-pages/pull/new/gh-pages
+        remote:
+        To https://github.com/king-garlic/svelte-gh-pages.git
+        * [new branch]      0007378531e4f0ec160387dd460f5a44be897927 -> gh-pages
+
+        C:\job\front-end\svelte\svelte-gh-pages>
+
+
+
+
+
+
+    17. https://github.com/king-garlic/svelte-gh-pages 새로고침해서  main 브랜치 외 생성된 브랜치 확인
+
+        branch 생성 확인 -  gh-pages
+
+
+    18. Settings 탭 클릭 하고 왼쪽 메뉴 중간 Pages 클릭
+
+        https://github.com/king-garlic/svelte-gh-pages/settings/pages
+
+
+            https://king-garlic.github.io/svelte-gh-pages/ 링크 확인
+
+    19. 링크 페이지 확인
+        https://king-garlic.github.io/svelte-gh-pages/            
+
+    20. yarn build
+
+        C:\job\front-end\svelte\svelte-gh-pages>yarn build
+        yarn run v1.22.18
+        $ rollup -c
+
+        src/main.js → public/build/bundle.js...
+        created public/build/bundle.js in 523ms
+        Done in 1.32s.
+
+        C:\job\front-end\svelte\svelte-gh-pages>        
+
+
+    21. build 하고 배포용 소스 올리기 
+        git subtree push --prefix public/ origin gh-pages
+
+
+
+
+
+        C:\job\front-end\svelte\svelte-gh-pages>git subtree push --prefix public/ origin gh-pages
+        git push using:  origin gh-pages
+        Everything up-to-date
+
+
+
+
+    22. 배포 된 소스 확인
+        https://king-garlic.github.io/svelte-gh-pages/
+
+
+    23. git commit and push     
